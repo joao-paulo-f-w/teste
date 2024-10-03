@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = peseudo-class
+            :: =pesudo-element
+            >  = clildren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;/*tirar o sublinado dp links*/
+            font-weight: bold;/*deixar em nergrito*/
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline; /*ficar sublinhado quando passar o mouse em cima*/
+        }
+        a:active{
+            color: yellow;/*qunado clicardo ficar da cor amarelo*/
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: none;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+   <h1>personalizando links</h1> 
+   <ul>
+        <li><a href="https://gustavoguanabara.github.io">repositorio github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">site do crusoemvideo</a></li>
+   </ul>
+</body>
+</html>
